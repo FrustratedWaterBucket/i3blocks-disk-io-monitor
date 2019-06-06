@@ -12,9 +12,6 @@ struct DiskIOStats {
     time: SystemTime
 }
 
-// 829
-// 837
-
 fn main() {
 
     let args: Vec<_> = env::args().collect();
