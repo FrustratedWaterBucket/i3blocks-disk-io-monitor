@@ -3,6 +3,10 @@ i3 Blocks disk IO real time monitor
 
 
 
-# Compiling
+# Compile
 
-> cargo build --release
+`cargo build --release`
+
+# Run 
+
+`i3blocksdiskio sda`
