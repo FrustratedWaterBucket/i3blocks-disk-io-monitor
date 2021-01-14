@@ -1,0 +1,20 @@
+name: Test tag
+
+on:
+  push:
+    branches:
+      - refs/tags/*
+
+jobs:
+  sample-job:
+    # Name the Job
+    name: Job da trampa
+    # Set the type of machine to run on
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checks out a copy of your repository on the ubuntu-latest machine
+      - name: Checkout code
+        uses: actions/checkout@v2
+        runs: |
+          echo $GITHUB_REF
